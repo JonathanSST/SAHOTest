@@ -1,0 +1,70 @@
+﻿body
+{
+	font-family: "微軟正黑體","Arial";
+	font-size: 14px;
+}
+
+input[type="text"]
+{
+	font-family: "微軟正黑體","Arial";
+	font-size: 14px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+}
+
+textarea
+{
+	font-family: "微軟正黑體","Arial";
+	font-size: 14px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+}
+
+input[type="text"].TextBoxRequired
+{
+	background-color: #FFE5E5;
+}
+
+/*input[type="password"]
+{
+}*/
+input[type="submit"]
+{
+	border: 1px solid #525052;
+	background: #879096;
+	background: -webkit-gradient(linear, left top, left bottom, from(#73797d), to(#879096));
+	background: -webkit-linear-gradient(top, #73797d, #879096);
+	background: -moz-linear-gradient(top, #73797d, #879096);
+	background: -ms-linear-gradient(top, #73797d, #879096);
+	background: -o-linear-gradient(top, #73797d, #879096);
+	padding: 2px 8px;
+	border-radius: 5px;
+	color: white;
+	font-family: "微軟正黑體","Arial";
+	font-size: 14px;
+}
+
+	input[type="submit"]:hover
+	{
+		border-top-color: #4f4a4f;
+		background: #4f4a4f;
+		color: #ffffff;
+	}
+
+	input[type="submit"]:active
+	{
+		background: #d9d9d9;
+		color: black;
+	}
+
+
+
+
+/*input[type="checkbox"]
+{
+}*/
+/*input[type="button"]
+{
+}*/

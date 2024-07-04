@@ -1,0 +1,165 @@
+﻿<?xml version="1.0"?>
+<!-- 如需如何設定 ASP.NET 應用程式的詳細資訊，請造訪 http://go.microsoft.com/fwlink/?LinkId=169433 -->
+<!-- 網頁程式首次安裝版本：v2017.02.10.0508 -->
+<configuration>
+  <configProtectedData>
+    <providers>
+      <add name="SahoProtectedProvider" type="System.Configuration.RsaProtectedConfigurationProvider, System.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" keyContainerName="SahoKeys" useMachineContainer="true"/>
+    </providers>
+  </configProtectedData>
+  <appSettings>
+    <!-- 一、設定系統的資料庫 -->
+    <add key="DbID" value="sa"/>
+    <!-- 設定資料庫帳號 -->
+    <add key="DbPW" value="1234"/>
+    <!-- 設定資料庫密碼 -->
+    <add key="DbName" value="SMS_DB"/>
+    <!-- 設定資料庫名稱 -->
+    <add key="DbSource" value="RDSYS-PC\SQLEXPRESS"/>
+    <!-- 設定資料庫來源 -->
+    <add key="DbEncrypt" value="0"/>
+    <!-- 設定資料庫加密連線 0=>不加密，1=>使用加密 -->
+    <add key="DbProvider" value="SQLNCLI11.1"/>
+    <!-- 資料庫提供者版本 -->
+    <!-- 二、設定SC程式監聽的IPPort位置與埠號 -->
+    <add key="SCListenIPPort" value="127.0.0.1:8001"/>
+    <!-- 三、設定WEB程式預設的功能選項與內容 -->
+    <add key="TitleName" value="SMS管理系統"/>
+    <!-- 設定WEB程式登入的標題名稱 -->
+    <add key="ShowEquList" value="2"/>
+    <!-- 人員基本資料設定顯示設備清單；1：顯示、2：隱藏 -->
+    <add key="ShowCardAuthAdj" value="1"/>
+    <!-- 人員基本資料設定顯示卡片權限調整；1：顯示、2：隱藏 -->
+    <add key="LanguageOption" value="0"/>
+    <!--人員基本資料預設公司-->
+    <add key="DefaultOrg" value="無組織.C000"/>
+    <!-- 語系選項參數 0：繁體中文、1：英文-->
+    <!-- 四、設定WEB程式自訂的功能選項與內容 -->
+    <!-- 自行評估需求附加功能參數；請參閱附加功能參數設定與說明文件 -->
+    <!-- 五、設定WEB程式特殊的功能選項與內容 -->
+    <add key="ValidationSettings:UnobtrusiveValidationMode" value="none"/>
+    <!-- 四、中美和使用中的參數-->
+    <add key="ReportOverTime" value="12"/>
+    <!--報表超時設定-->
+    <add key="WorkOverTime" value="24"/>
+    <!--工時設定-->
+    <!-- 網頁預設不用設定 -->
+    <add key="owin:AutomaticAppStartup" value="false"/>
+    <!-- 啟用OWIN與否此參數須由系統人員依照情況設定 -->
+    <!--Megabank 驗證用的參數-->
+    <add key="ChkUrl" value="http://127.0.0.1:8001/UnitTest/WriteSSOInfo.aspx"/>
+    <!--驗證用的網址-->
+    <add key="ApName" value="EJ"/>
+    <!--連線系統名稱-->
+    <add key="TimeOutMin" value="0"/>
+    <!--中油永安差勤轉換的參數-->
+    <add key="WaitMin" value="5"/>
+    <add key="OverMin" value="60"/>
+    <add key="Custom" value="商和系統"/>
+    <!-- 客戶名稱 -->
+    <add key="SWTag" value="ABCR"/>
+    <!-- 輪班標籤；對照B01_Person.Text5 -->
+    <add key="SWTagList" value="1,04:00,06:00;2,12:00,13:00;3,18:00,19:00;0,00:00,00:00"/>
+    <!-- 輪班標籤清單；第一順位代表是跨夜班、最後順位代表是排休、休息啟始時間、休息結束時間 -->
+    <add key="IsSrvMode" value="0"/>
+    <!-- 是否服務模式："0"(關閉)、"1"(開啟) -->
+    <!-- 設定資料庫的連線資訊(SMS) -->
+    <add key="DbUserID" value="sa"/>
+    <add key="DbUserPW" value="1234"/>
+    <add key="DbDataBase" value="SMS_DB"/>
+    <add key="DbDataSource" value="RDSYS-PC\SQLEXPRESS"/>
+    <!-- 設定執行紀錄的作業參數 -->
+    <add key="LogKeepDay" value="100"/>
+    <!-- 紀錄保留天數；"0"(不保留)、"1~N"(保留天數) -->
+    <add key="LogFileRoot" value="C:\Saho\CPCWorkDetail\Log"/>
+    <!-- 紀錄檔案目錄；"D:"、"D:\Log"或""(預設保留目錄) -->
+  </appSettings>
+  <!-- ******************** 以下部份不用設定 ******************** -->
+  <!-- 強制關閉相容性檢視 -->
+  <system.webServer>
+    <httpProtocol>
+      <customHeaders>
+        <!-- Hide Server Information -->
+        <remove name="X-Powered-By"/>
+        <remove name="X-AspNetMvc-Version"/>
+        <!-- Referrer Policy -->
+        <add name="Referrer-Policy" value="No-referrer-when-downgrade"/>
+        <!-- Anti-Clickjacking-->
+        <add name="X-Frame-Options" value="DENY"/>
+        <!-- Anti-XSS for IE -->
+        <add name="X-Xss-Protection" value="1; mode=block"/>
+        <!-- HSTS -->
+        <add name="Strict-Transport-Security" value="max-age=31536000; includeSubDomains"/>
+        <add name="Content-Security-Policy" value="default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; frame-src 'none'; img-src 'self' https: data:"/>
+      </customHeaders>
+    </httpProtocol>
+    <security>
+      <requestFiltering>
+        <verbs>
+          <add verb="OPTIONS" allowed="false"/>
+        </verbs>
+      </requestFiltering>
+    </security>
+  </system.webServer>
+  <!--
+    如需 web.config 變更的說明，請參閱 http://go.microsoft.com/fwlink/?LinkId=235367。
+
+    您可以在 <httpRuntime> 標記上設定下列屬性。
+      <system.Web>
+        <httpRuntime targetFramework="4.6.2" />
+      </system.Web>
+  -->
+  <location path="." allowOverride="true" inheritInChildApplications="false">
+    <system.web>
+      <!--<httpCookies sameSite="Lax" requireSSL="false"  httpOnlyCookies="true" />-->
+      <anonymousIdentification cookieRequireSSL="false"/>
+      <!-- No config attribute for SameSite -->
+      <authentication>
+        <forms cookieSameSite="Lax" requireSSL="true"/>
+      </authentication>
+      <sessionState cookieSameSite="Lax"/>
+      <!-- No config attribute for Secure -->
+      <roleManager cookieRequireSSL="false"/>
+      <!-- No config attribute for SameSite -->
+      <pages viewStateEncryptionMode="Always">
+        <controls>
+          <add tagPrefix="ajaxToolkit" assembly="AjaxControlToolkit" namespace="AjaxControlToolkit"/>
+        </controls>
+      </pages>
+      <!-- Page ViewState Encryption -->
+      <!--<sessionState mode="InProc" cookieless="false" timeout="20" cookieName="SessID"/>-->
+      <httpRuntime enableVersionHeader="false" targetFramework="4.8" maxRequestLength="300000000" executionTimeout="300"/>
+      <!-- 解出隱藏指令並修改如下 -->
+      <!--<customErrors mode="Off"/>-->
+      <customErrors defaultRedirect="~/MessagePage/ExtError.aspx" mode="RemoteOnly">
+        <error statusCode="500" redirect="~/MessagePage/ExtError.aspx"/>
+      </customErrors>
+      <!-- 新增以下內容 -->
+      <webServices>
+        <protocols>
+          <add name="HttpPost"/>
+          <add name="HttpGet"/>
+        </protocols>
+      </webServices>
+      <globalization requestEncoding="UTF-8" responseEncoding="UTF-8"/>
+    </system.web>
+  </location>
+  <system.web.extensions>
+    <scripting>
+      <webServices>
+        <jsonSerialization maxJsonLength="800000000"/>
+      </webServices>
+    </scripting>
+  </system.web.extensions>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Data.SQLite" publicKeyToken="db937bc2d44ff139" culture="neutral"/>
+        <bindingRedirect oldVersion="0.0.0.0-1.0.105.2" newVersion="1.0.105.2"/>
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+  <system.web>
+    <compilation targetFramework="4.8" debug="true"/>
+  </system.web>
+</configuration>

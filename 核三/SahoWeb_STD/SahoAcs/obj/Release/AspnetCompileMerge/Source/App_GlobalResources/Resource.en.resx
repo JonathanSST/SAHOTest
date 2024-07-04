@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnLogin" xml:space="preserve">
+    <value>Login</value>
+    <comment>登入</comment>
+  </data>
+  <data name="lblFooter" xml:space="preserve">
+    <value>Saho Corporation &amp;copy;Copyright  All Rights Reserved.</value>
+    <comment>框架置底文字描述</comment>
+  </data>
+  <data name="lblPwd" xml:space="preserve">
+    <value>Password</value>
+    <comment>登入密碼文字</comment>
+  </data>
+  <data name="lblRegards" xml:space="preserve">
+    <value>Hello!!</value>
+    <comment>歡迎詞</comment>
+  </data>
+  <data name="lblTitle" xml:space="preserve">
+    <value>Manage Platform(SMS)</value>
+    <comment>系統抬頭</comment>
+  </data>
+  <data name="lblUid" xml:space="preserve">
+    <value>Account</value>
+    <comment>登入帳號文字</comment>
+  </data>
+  <data name="rdoPsn" xml:space="preserve">
+    <value>Person</value>
+    <comment>登入類別-人員</comment>
+  </data>
+  <data name="rdoUser" xml:space="preserve">
+    <value>User</value>
+    <comment>登入類別-使用者</comment>
+  </data>
+  <data name="btnAdd" xml:space="preserve">
+    <value>Add</value>
+    <comment>新增按鈕</comment>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>取消按鈕</comment>
+  </data>
+  <data name="btnDelete" xml:space="preserve">
+    <value>Delete</value>
+    <comment>刪除按鈕</comment>
+  </data>
+  <data name="btnEdit" xml:space="preserve">
+    <value>Edit</value>
+    <comment>編輯按鈕</comment>
+  </data>
+  <data name="btnQuery" xml:space="preserve">
+    <value>Query</value>
+    <comment>查詢按鈕</comment>
+  </data>
+  <data name="btnSave" xml:space="preserve">
+    <value>Save</value>
+    <comment>儲存按鈕</comment>
+  </data>
+  <data name="lbtnFirst" xml:space="preserve">
+    <value>First</value>
+    <comment>第一頁按鈕</comment>
+  </data>
+  <data name="lbtnLast" xml:space="preserve">
+    <value>Last</value>
+    <comment>最末頁按鈕</comment>
+  </data>
+  <data name="lbtnNext" xml:space="preserve">
+    <value>Next</value>
+    <comment>下一頁按鈕</comment>
+  </data>
+  <data name="lbtnPrev" xml:space="preserve">
+    <value>Prev</value>
+    <comment>前一頁按鈕</comment>
+  </data>
+  <data name="NotSelectForDelete" xml:space="preserve">
+    <value>Attention!! That currently can not be deleted !! \n\n Possible reasons: 1. There is no information available for deletion. \n　　　　　　　　  2. Select the item to be deleted yet. \n</value>
+    <comment>刪除資料未選擇</comment>
+  </data>
+  <data name="NotSelectForEdit" xml:space="preserve">
+    <value>Attention!! That currently can not be edited !! \n\n Possible reasons: 1. There is no information available for editing. \n　　　　　　　　  2. Select the item to be edit yet. \n</value>
+    <comment>編輯資料未選擇</comment>
+  </data>
+  <data name="NotSelectForQuery" xml:space="preserve">
+    <value>Attention!! That currently can not be query!! \n\n Possible reasons: 1. There is no information available for query. \n　　　　　　　　  2. Select the item to be query yet. \n</value>
+    <comment>傳送查詢資料未選擇</comment>
+  </data>
+  <data name="NotSelectForSend" xml:space="preserve">
+    <value>Attention!! That currently can not be send!! \n\n Possible reasons: 1. There is no information available for send. \n　　　　　　　　  2. Select the item to be send yet. \n</value>
+    <comment>傳送資料未選擇</comment>
+  </data>
+  <data name="btnAuth" xml:space="preserve">
+    <value>Manage List</value>
+    <comment>管理列表按鈕</comment>
+  </data>
+  <data name="btnAuthEquGroup" xml:space="preserve">
+    <value>Equ Group Set</value>
+    <comment>設備群組設定按鈕</comment>
+  </data>
+  <data name="btnJoin" xml:space="preserve">
+    <value>Join</value>
+    <comment>加入按鈕</comment>
+  </data>
+  <data name="btnLeft" xml:space="preserve">
+    <value>Left</value>
+    <comment>左移按鈕</comment>
+  </data>
+  <data name="btnRemove" xml:space="preserve">
+    <value>Remove</value>
+    <comment>移除按鈕</comment>
+  </data>
+  <data name="btnRight" xml:space="preserve">
+    <value>Right</value>
+    <comment>右移按鈕</comment>
+  </data>
+  <data name="btnOK" xml:space="preserve">
+    <value>Define</value>
+    <comment>確定按鈕</comment>
+  </data>
+  <data name="btnClear" xml:space="preserve">
+    <value>Clear</value>
+    <comment>清除按鈕</comment>
+  </data>
+  <data name="btnView" xml:space="preserve">
+    <value>View</value>
+    <comment>檢視按鈕</comment>
+  </data>
+  <data name="btnEquList" xml:space="preserve">
+    <value>Equ List</value>
+    <comment>設備列表按鈕</comment>
+  </data>
+  <data name="ddlSelectDefault" xml:space="preserve">
+    <value>Select Data</value>
+    <comment>第一個請選擇</comment>
+  </data>
+  <data name="btnAuthData" xml:space="preserve">
+    <value>Select Equiment</value>
+  </data>
+  <data name="lblAuthDataList" xml:space="preserve">
+    <value>Authorization for Equiment</value>
+  </data>
+  <data name="lblCondition" xml:space="preserve">
+    <value>Conditions</value>
+  </data>
+  <data name="lblDataList" xml:space="preserve">
+    <value>Data List</value>
+  </data>
+  <data name="lblJoin" xml:space="preserve">
+    <value>Join</value>
+  </data>
+  <data name="lblMsg" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="lblProcessType" xml:space="preserve">
+    <value>Process Type：</value>
+  </data>
+  <data name="lblUnJoin" xml:space="preserve">
+    <value>Un Join</value>
+  </data>
+  <data name="lblBrowserAlarm" xml:space="preserve">
+    <value>The system can be support browser later than IE 10</value>
+  </data>
+  <data name="ddlDefault" xml:space="preserve">
+    <value>Select</value>
+    <comment>預設選項</comment>
+  </data>
+  <data name="CodeSetting" xml:space="preserve">
+    <value>Code Setting</value>
+  </data>
+  <data name="EquName" xml:space="preserve">
+    <value>EQU. Name</value>
+  </data>
+  <data name="EquNo" xml:space="preserve">
+    <value>EQU. No</value>
+  </data>
+  <data name="Floor" xml:space="preserve">
+    <value>Floor</value>
+  </data>
+  <data name="InMgn" xml:space="preserve">
+    <value>In Ctrl. Area</value>
+  </data>
+  <data name="OutMgn" xml:space="preserve">
+    <value>Out Ctrl. Area</value>
+  </data>
+  <data name="ParaSetting" xml:space="preserve">
+    <value>Parameter Setting</value>
+  </data>
+  <data name="AddConn" xml:space="preserve">
+    <value>Add Connection Device</value>
+  </data>
+  <data name="AddCtrl" xml:space="preserve">
+    <value>Add Ctrl.</value>
+  </data>
+  <data name="AddEqu" xml:space="preserve">
+    <value>Add Equipment</value>
+  </data>
+  <data name="AddReader" xml:space="preserve">
+    <value>Add Reader</value>
+  </data>
+  <data name="AutoReturn" xml:space="preserve">
+    <value>Auto Return</value>
+  </data>
+  <data name="ConnMode" xml:space="preserve">
+    <value>Conn. Mode</value>
+  </data>
+  <data name="ConnType" xml:space="preserve">
+    <value>Conn. Type</value>
+  </data>
+  <data name="CtrlInfo" xml:space="preserve">
+    <value>Ctrl. Info</value>
+  </data>
+  <data name="CtrlModel" xml:space="preserve">
+    <value>Ctrl. Model</value>
+  </data>
+  <data name="CtrlName" xml:space="preserve">
+    <value>Ctrl. Name</value>
+  </data>
+  <data name="CtrlNo" xml:space="preserve">
+    <value>Ctrl. No</value>
+  </data>
+  <data name="CtrlSet" xml:space="preserve">
+    <value>Ctrl. Setting</value>
+  </data>
+  <data name="CtrlStatus" xml:space="preserve">
+    <value>Ctrl. Status</value>
+  </data>
+  <data name="DeviceConnSet" xml:space="preserve">
+    <value>Device Connection Setting</value>
+  </data>
+  <data name="DeviceInfo" xml:space="preserve">
+    <value>Device Info</value>
+  </data>
+  <data name="DeviceIP" xml:space="preserve">
+    <value>Device Conn.</value>
+  </data>
+  <data name="DeviceModel" xml:space="preserve">
+    <value>Device Model</value>
+  </data>
+  <data name="DeviceNo" xml:space="preserve">
+    <value>Device No</value>
+  </data>
+  <data name="EquMap" xml:space="preserve">
+    <value>Equ Mapping</value>
+  </data>
+  <data name="Filter" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="FirmVer" xml:space="preserve">
+    <value>Firmware Version</value>
+  </data>
+  <data name="InOut" xml:space="preserve">
+    <value>In/Out</value>
+  </data>
+  <data name="MasterConn" xml:space="preserve">
+    <value>Master Conn</value>
+  </data>
+  <data name="ReaderInfo" xml:space="preserve">
+    <value>Reader Info</value>
+  </data>
+  <data name="ReaderName" xml:space="preserve">
+    <value>Reader Name</value>
+  </data>
+  <data name="ReaderNo" xml:space="preserve">
+    <value>Reader No</value>
+  </data>
+  <data name="ReaderSet" xml:space="preserve">
+    <value>Reader Setting</value>
+  </data>
+  <data name="MacNo" xml:space="preserve">
+    <value>Mac. No</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Disabled" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="In" xml:space="preserve">
+    <value>In</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Out" xml:space="preserve">
+    <value>Out</value>
+  </data>
+  <data name="Restrict" xml:space="preserve">
+    <value>Restrict</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="lblEnd" xml:space="preserve">
+    <value>End Time</value>
+  </data>
+  <data name="lblStart" xml:space="preserve">
+    <value>Start Time</value>
+  </data>
+  <data name="NonData" xml:space="preserve">
+    <value>data not found</value>
+  </data>
+  <data name="btnAdvance" xml:space="preserve">
+    <value>Advance</value>
+  </data>
+  <data name="btnExit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="btnExport" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="lblTo" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="lblGvCounts" xml:space="preserve">
+    <value>        Total {0} Records      </value>
+  </data>
+  <data name="lblLoginChk" xml:space="preserve">
+    <value>ID or password must keyin!!</value>
+  </data>
+  <data name="btnRefresh" xml:space="preserve">
+    <value>Data Resend</value>
+  </data>
+  <data name="MapEqu" xml:space="preserve">
+    <value>MapEqu</value>
+  </data>
+</root>

@@ -1,0 +1,63 @@
+﻿/* 查詢表單 gvStyle 隔行換色 */
+.GVStyle {
+    font-family: "微軟正黑體","Arial";
+    font-size: 14px;
+}
+
+    /*Header 標題*/
+    .GVStyle th {
+        height: 25px;
+        padding-left: 3px;
+        padding-right: 3px;
+        color: #fff;
+        background: #000;
+        font-family: "微軟正黑體","Arial";
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+        border-right: 1px solid #999;
+    }
+
+        .GVStyle th a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+    .GVStyle .ChR {
+        height: 25px;
+        border: 1px solid #999;
+        background-color: #CCC;
+    }
+
+    .GVStyle .td {
+        height: 25px;
+        border: 1px solid #999;
+        font-size: 14px;
+    }
+
+    .GVStyle tr:hover {
+        background-color: #6bc5dd;
+    }
+
+.GVStylePgr td {
+    background-color: #999999;
+    padding: 3px;
+    font-family: "微軟正黑體","Arial";
+    font-size: 14px;
+}
+
+.GVStylePgr a {
+    color: #000;
+    text-decoration: underline;
+    padding: 0px 3px 0px 3px;
+    border: solid;
+    border-radius: 3px;
+    border-color: #fff;
+    border-width: 1px;
+}
+
+    .GVStylePgr a:hover {
+        color: #000;
+        background: #fff;
+        text-decoration: none;
+    }

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SysPara>
+  <DelMngEquGrp>DELETE B01_MgnEquGroup WHERE EquGrpID=@EquGrpID</DelMngEquGrp>
+  <DelOrgEquGrp>DELETE B01_OrgEquGroup WHERE EquGrpID=@EquGrpID</DelOrgEquGrp>
+  <DelEquGrpData>DELETE B01_EquGroupData WHERE EquGrpID=@EquGrpID</DelEquGrpData>
+  <DelUserMgns>DELETE B00_SysUserMgns WHERE UserID=@UserID</DelUserMgns>
+  <DelUserRoles>DELETE B00_SysUserRoles WHERE UserID=@UserID</DelUserRoles>
+  <DelUserMenus>DELETE B00_SysUserMenus WHERE UserID=@UserID</DelUserMenus>
+  <DelRole>DELETE B00_SysRole WHERE RoleID=@RoleID</DelRole>
+  <DelRoleMenus>DELETE B00_SysRoleMenus WHERE RoleID=@RoleID</DelRoleMenus>
+</SysPara>

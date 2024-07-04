@@ -1,0 +1,17 @@
+C:\Users\csh07\Documents\sms發行資料\smsweb201601061709\SahoWeb_STD\SahoTestConsole\bin\Release\SahoTestConsole.exe.config
+C:\Users\csh07\Documents\sms發行資料\smsweb201601061709\SahoWeb_STD\SahoTestConsole\bin\Release\SahoTestConsole.exe
+C:\Users\csh07\Documents\sms發行資料\smsweb201601061709\SahoWeb_STD\SahoTestConsole\bin\Release\SahoTestConsole.pdb
+C:\Users\csh07\Documents\sms發行資料\smsweb201601061709\SahoWeb_STD\SahoTestConsole\bin\Release\SaLib.dll
+C:\Users\csh07\Documents\sms發行資料\smsweb201601061709\SahoWeb_STD\SahoTestConsole\bin\Release\SaLib.pdb
+C:\Users\csh07\Documents\sms發行資料\smsweb201601061709\SahoWeb_STD\SahoTestConsole\obj\Release\SahoTestConsole.csprojResolveAssemblyReference.cache
+C:\Users\csh07\Documents\sms發行資料\smsweb201601061709\SahoWeb_STD\SahoTestConsole\obj\Release\SahoTestConsole.exe
+C:\Users\csh07\Documents\sms發行資料\smsweb201601061709\SahoWeb_STD\SahoTestConsole\obj\Release\SahoTestConsole.pdb
+C:\Users\csh07\Documents\sms發行資料\smsweb201601061709\SahoWeb_STD\SahoTestConsole\bin\Release\TempCore.dll
+C:\Users\csh07\Documents\sms發行資料\smsweb201601061709\SahoWeb_STD\SahoTestConsole\bin\Release\MyDataObjectLib.dll
+C:\Users\csh07\Documents\sms發行資料\smsweb201601061709\SahoWeb_STD\SahoTestConsole\bin\Release\DataAnnotationMapper.dll
+C:\Users\csh07\Documents\sms發行資料\smsweb201601061709\SahoWeb_STD\SahoTestConsole\bin\Release\TempCore.pdb
+C:\Users\csh07\Documents\sms發行資料\smsweb201601061709\SahoWeb_STD\SahoTestConsole\bin\Release\MyDataObjectLib.pdb
+C:\Users\csh07\Documents\sms發行資料\smsweb201601061709\SahoWeb_STD\SahoTestConsole\bin\Release\DataAnnotationMapper.pdb
+C:\Users\csh07\Documents\sms發行資料\smsweb20160419\SahoWeb_STD\SahoTestConsole\bin\Release\SahoTestConsole.exe.config
+C:\Users\csh07\Documents\sms發行資料\smsweb20160419\SahoWeb_STD\SahoTestConsole\obj\Release\SahoTestConsole.exe
+C:\Users\csh07\Documents\sms發行資料\smsweb20160419\SahoWeb_STD\SahoTestConsole\obj\Release\SahoTestConsole.pdb

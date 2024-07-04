@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1500
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SahoAcs", "SahoAcs\SahoAcs.csproj", "{952CC03E-282F-4214-AAA1-0B6035A5BA87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaLib", "SaLib\SaLib.csproj", "{706E5AEE-F3ED-445D-8478-3B986983916B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperDataObjectLib", "DapperDataObjectLib\DapperDataObjectLib.csproj", "{A730414D-6282-4CE0-B7CD-425DD95EA0CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardAuthCore", "CardAuthCore\CardAuthCore.csproj", "{84B7AB07-5968-426E-AAD6-FEF92453AC6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestRefDll", "TestRefDll\TestRefDll.csproj", "{D2757277-A31A-4430-A0C3-4DD4D4B0B7AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{952CC03E-282F-4214-AAA1-0B6035A5BA87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{952CC03E-282F-4214-AAA1-0B6035A5BA87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{952CC03E-282F-4214-AAA1-0B6035A5BA87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{952CC03E-282F-4214-AAA1-0B6035A5BA87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{706E5AEE-F3ED-445D-8478-3B986983916B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{706E5AEE-F3ED-445D-8478-3B986983916B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{706E5AEE-F3ED-445D-8478-3B986983916B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{706E5AEE-F3ED-445D-8478-3B986983916B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A730414D-6282-4CE0-B7CD-425DD95EA0CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A730414D-6282-4CE0-B7CD-425DD95EA0CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A730414D-6282-4CE0-B7CD-425DD95EA0CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A730414D-6282-4CE0-B7CD-425DD95EA0CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84B7AB07-5968-426E-AAD6-FEF92453AC6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84B7AB07-5968-426E-AAD6-FEF92453AC6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84B7AB07-5968-426E-AAD6-FEF92453AC6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84B7AB07-5968-426E-AAD6-FEF92453AC6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2757277-A31A-4430-A0C3-4DD4D4B0B7AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2757277-A31A-4430-A0C3-4DD4D4B0B7AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2757277-A31A-4430-A0C3-4DD4D4B0B7AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2757277-A31A-4430-A0C3-4DD4D4B0B7AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4CD19E92-BEF0-48D0-8F4A-382D978F2C45}
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal

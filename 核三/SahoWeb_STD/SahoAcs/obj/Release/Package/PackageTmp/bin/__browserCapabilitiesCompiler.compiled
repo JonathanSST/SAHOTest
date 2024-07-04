@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="2" virtualPath="/App_Browsers/" hash="ffffffffdf645429" filehash="55be39277b3d8876" flags="110000" assembly="App_Browsers" type="ASP.ApplicationBrowserCapabilitiesFactory">
+    <filedeps>
+        <filedep name="/App_Browsers/blackberry.browser" />
+        <filedep name="/App_Browsers/chrome.browser" />
+        <filedep name="/App_Browsers/firefox.browser" />
+        <filedep name="/App_Browsers/gateway.browser" />
+        <filedep name="/App_Browsers/generic.browser" />
+        <filedep name="/App_Browsers/ie.browser" />
+        <filedep name="/App_Browsers/ie11.browser" />
+        <filedep name="/App_Browsers/iemobile.browser" />
+        <filedep name="/App_Browsers/iphone.browser" />
+        <filedep name="/App_Browsers/opera.browser" />
+        <filedep name="/App_Browsers/safari.browser" />
+        <filedep name="/App_Browsers/ucbrowser.browser" />
+    </filedeps>
+</preserve>

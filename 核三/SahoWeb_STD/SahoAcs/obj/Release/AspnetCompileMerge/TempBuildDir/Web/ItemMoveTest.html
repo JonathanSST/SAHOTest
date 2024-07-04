@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script src="../Scripts/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+    function SaveData() {
+        var list = $("#CarList").val();
+        //console.log(listT);
+        for (var i = 0; i < list.length; i++) {
+            //selectobject.remove(i);
+            //$("#CarInList option").append($("#CarList option:[value=" + list[i] + "]"));
+            //console.log(list[i]);
+            //console.log($("#CarList options:[value='" + list[i] + "']"));
+        }
+        $("#CarInList").append($('#CarList option:selected'));
+        $('#CarList option:selected').remove();
+    }
+
+    function RemoveData() {
+        $("#CarList").append($('#CarInList option:selected'));
+        $('#CarInList option:selected').remove();
+    }
+
+    </script>
+
+    <title></title>
+</head>
+<body>
+    <div>
+        <select multiple="multiple" size="9" id="CarList" style="width:120px">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>            
+        </select>
+        <input type="button" value="移入" onclick="SaveData()" />
+        <br />
+        <select multiple="multiple" size="9" id="CarInList" style="width:120px"></select>
+        <input type="button" value="移出" onclick="RemoveData()" />
+    </div>
+</body>
+</html>

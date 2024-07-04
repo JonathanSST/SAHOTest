@@ -1,0 +1,146 @@
+----------------------------------------------------------------------------------------------------
+12:18:10 > 執行 GetDataTable 指令時發生錯誤
+         > CommandText : SELECT * FROM ( SELECT ROW_NUMBER() OVER(ORDER BY CONVERT(VARCHAR(10),B01_CardLog.CardTime,121) DESC, B01_CardLog.CardNo) AS NewIDNum,
+                B00_CardLogState.StateDesc AS 'LogStatusName', CONVERT(VARCHAR(10),B01_CardLog.CardTime,121) AS 'Date',
+                MIN(SUBSTRING(CONVERT(VARCHAR(50),B01_CardLog.CardTime,121),12,8)) AS 'First',
+                MAX(SUBSTRING(CONVERT(VARCHAR(50),B01_CardLog.CardTime,121),12,8)) AS 'Last',
+                B01_CardLog.CardNo, (SELECT OrgName FROM OrgStrucAllData('Department') WHERE OrgIDList = B01_CardLog.OrgStruc) AS 'Dept',
+                B01_CardLog.PsnNo, B01_CardLog.PsnName
+                FROM B01_CardLog
+                LEFT JOIN B00_CardLogState ON B00_CardLogState.Code = B01_CardLog.LogStatus
+                LEFT JOIN B00_ItemList ON B00_ItemList.ItemClass = 'CardType' AND B00_ItemList.ItemNo = B01_CardLog.CardType
+                INNER JOIN (SELECT PsnNo FROM B01_Person AS Person
+                INNER JOIN B01_OrgStruc AS OrgStruc ON OrgStruc.OrgStrucID = Person.OrgStrucID
+                INNER JOIN B01_MgnOrgStrucs AS MgnOrgStrucs ON MgnOrgStrucs.OrgStrucID = OrgStruc.OrgStrucID
+                INNER JOIN B00_SysUserMgns AS SysUserMgns ON SysUserMgns.MgaID = MgnOrgStrucs.MgaID
+                INNER JOIN B00_SysUser AS SysUser ON SysUser.UserID = SysUserMgns.UserID  WHERE (SysUser.UserID = ?)) AS MgnPerson ON MgnPerson.PsnNo = B01_CardLog.PsnNo  
+				WHERE  (B01_CardLog.CardType = 'E' OR B01_CardLog.CardType = 'T') AND (B01_CardLog.IsAndTrt = '1' OR B01_CardLog.EquClass = 'TRT')  
+				AND  (CONVERT(VARCHAR(10),B01_CardLog.CardTime,111) >= ? )  AND  (CONVERT(VARCHAR(10),B01_CardLog.CardTime,111) <= ? )  
+				GROUP BY CONVERT(VARCHAR(10),B01_CardLog.CardTime,121), B00_CardLogState.StateDesc, B01_CardLog.CardNo, B01_CardLog.CardVer, B01_CardLog.PsnNo, B01_CardLog.PsnName, 
+				B01_CardLog.OrgStruc ) AS Q WHERE Q.NewIDNum BETWEEN 1 AND 100
+         >  Parameters : |S:Saho|S:2016/02/11|S:2016/03/09
+
+     Message : 查詢逾時過期
+      Source : Microsoft OLE DB Provider for SQL Server
+  StackTrace :    於 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   於 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   於 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   於 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   於 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   於 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   於 System.Data.OleDb.OleDbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   於 Sa.DB.Base.GetDataTable(String sTableName, String sCommandText, List`1 liParameters, DataTable& oTable) 於 c:\Users\csh07\Documents\sms發行資料\smsweb201601061709\SahoWeb_STD\SaLib\DBClass\DBBase.cs: 行 884
+  TargetSite : Void ExecuteCommandTextErrorHandling(System.Data.OleDb.OleDbHResult)
+----------------------------------------------------------------------------------------------------
+13:03:43 > 執行 GetDataTable 指令時發生錯誤
+         > CommandText : SELECT * FROM ( SELECT ROW_NUMBER() OVER(ORDER BY CONVERT(VARCHAR(10),B01_CardLog.CardTime,121) DESC, B01_CardLog.CardNo) AS NewIDNum,
+                B00_CardLogState.StateDesc AS 'LogStatusName', CONVERT(VARCHAR(10),B01_CardLog.CardTime,121) AS 'Date',
+                MIN(SUBSTRING(CONVERT(VARCHAR(50),B01_CardLog.CardTime,121),12,8)) AS 'First',
+                MAX(SUBSTRING(CONVERT(VARCHAR(50),B01_CardLog.CardTime,121),12,8)) AS 'Last',
+                B01_CardLog.CardNo, (SELECT OrgName FROM OrgStrucAllData('Department') WHERE OrgIDList = B01_CardLog.OrgStruc) AS 'Dept',
+                B01_CardLog.PsnNo, B01_CardLog.PsnName
+                FROM B01_CardLog
+                LEFT JOIN B00_CardLogState ON B00_CardLogState.Code = B01_CardLog.LogStatus
+                LEFT JOIN B00_ItemList ON B00_ItemList.ItemClass = 'CardType' AND B00_ItemList.ItemNo = B01_CardLog.CardType
+                INNER JOIN (SELECT PsnNo FROM B01_Person AS Person
+                INNER JOIN B01_OrgStruc AS OrgStruc ON OrgStruc.OrgStrucID = Person.OrgStrucID
+                INNER JOIN B01_MgnOrgStrucs AS MgnOrgStrucs ON MgnOrgStrucs.OrgStrucID = OrgStruc.OrgStrucID
+                INNER JOIN B00_SysUserMgns AS SysUserMgns ON SysUserMgns.MgaID = MgnOrgStrucs.MgaID
+                INNER JOIN B00_SysUser AS SysUser ON SysUser.UserID = SysUserMgns.UserID  WHERE (SysUser.UserID = ?)) AS MgnPerson ON MgnPerson.PsnNo = B01_CardLog.PsnNo  
+				WHERE  (B01_CardLog.CardType = 'E' OR B01_CardLog.CardType = 'T') AND (B01_CardLog.IsAndTrt = '1' OR B01_CardLog.EquClass = 'TRT')  
+				AND  (CONVERT(VARCHAR(10),B01_CardLog.CardTime,111) >= ? )  AND  (CONVERT(VARCHAR(10),B01_CardLog.CardTime,111) <= ? )  
+				GROUP BY CONVERT(VARCHAR(10),B01_CardLog.CardTime,121), B00_CardLogState.StateDesc, B01_CardLog.CardNo, B01_CardLog.CardVer, B01_CardLog.PsnNo, B01_CardLog.PsnName, 
+				B01_CardLog.OrgStruc ) AS Q WHERE Q.NewIDNum BETWEEN 1 AND 100
+         >  Parameters : |S:Saho|S:'2016/02/11'|S:'2016/03/09'
+
+     Message : 查詢逾時過期
+      Source : Microsoft OLE DB Provider for SQL Server
+  StackTrace :    於 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   於 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   於 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   於 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   於 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   於 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   於 System.Data.OleDb.OleDbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   於 Sa.DB.Base.GetDataTable(String sTableName, String sCommandText, List`1 liParameters, DataTable& oTable) 於 c:\Users\csh07\Documents\sms發行資料\smsweb201601061709\SahoWeb_STD\SaLib\DBClass\DBBase.cs: 行 884
+  TargetSite : Void ExecuteCommandTextErrorHandling(System.Data.OleDb.OleDbHResult)
+----------------------------------------------------------------------------------------------------
+13:04:14 > 執行 GetDataTable 指令時發生錯誤
+         > CommandText : SELECT * FROM ( SELECT ROW_NUMBER() OVER(ORDER BY CONVERT(VARCHAR(10),B01_CardLog.CardTime,121) DESC, B01_CardLog.CardNo) AS NewIDNum,
+                B00_CardLogState.StateDesc AS 'LogStatusName', CONVERT(VARCHAR(10),B01_CardLog.CardTime,121) AS 'Date',
+                MIN(SUBSTRING(CONVERT(VARCHAR(50),B01_CardLog.CardTime,121),12,8)) AS 'First',
+                MAX(SUBSTRING(CONVERT(VARCHAR(50),B01_CardLog.CardTime,121),12,8)) AS 'Last',
+                B01_CardLog.CardNo, (SELECT OrgName FROM OrgStrucAllData('Department') WHERE OrgIDList = B01_CardLog.OrgStruc) AS 'Dept',
+                B01_CardLog.PsnNo, B01_CardLog.PsnName
+                FROM B01_CardLog
+                LEFT JOIN B00_CardLogState ON B00_CardLogState.Code = B01_CardLog.LogStatus
+                LEFT JOIN B00_ItemList ON B00_ItemList.ItemClass = 'CardType' AND B00_ItemList.ItemNo = B01_CardLog.CardType
+                INNER JOIN (SELECT PsnNo FROM B01_Person AS Person
+                INNER JOIN B01_OrgStruc AS OrgStruc ON OrgStruc.OrgStrucID = Person.OrgStrucID
+                INNER JOIN B01_MgnOrgStrucs AS MgnOrgStrucs ON MgnOrgStrucs.OrgStrucID = OrgStruc.OrgStrucID
+                INNER JOIN B00_SysUserMgns AS SysUserMgns ON SysUserMgns.MgaID = MgnOrgStrucs.MgaID
+                INNER JOIN B00_SysUser AS SysUser ON SysUser.UserID = SysUserMgns.UserID  WHERE (SysUser.UserID = ?)) AS MgnPerson ON MgnPerson.PsnNo = B01_CardLog.PsnNo  
+				WHERE  (B01_CardLog.CardType = 'E' OR B01_CardLog.CardType = 'T') AND (B01_CardLog.IsAndTrt = '1' OR B01_CardLog.EquClass = 'TRT')  
+				AND  (CONVERT(VARCHAR(10),B01_CardLog.CardTime,111) >= '2016/02/11' )  AND  (CONVERT(VARCHAR(10),B01_CardLog.CardTime,111) <= '2016/03/09' )  
+				GROUP BY CONVERT(VARCHAR(10),B01_CardLog.CardTime,121), B00_CardLogState.StateDesc, B01_CardLog.CardNo, B01_CardLog.CardVer, B01_CardLog.PsnNo, B01_CardLog.PsnName, 
+				B01_CardLog.OrgStruc ) AS Q WHERE Q.NewIDNum BETWEEN 1 AND 100
+         >  Parameters : |S:Saho|S:'2016/02/11'|S:'2016/03/09'
+
+     Message : 命令參數[1] '' 無效。
+命令參數[2] '' 無效。
+
+      Source : System.Data
+  StackTrace :    於 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   於 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   於 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   於 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   於 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   於 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   於 System.Data.OleDb.OleDbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   於 Sa.DB.Base.GetDataTable(String sTableName, String sCommandText, List`1 liParameters, DataTable& oTable) 於 c:\Users\csh07\Documents\sms發行資料\smsweb201601061709\SahoWeb_STD\SaLib\DBClass\DBBase.cs: 行 884
+  TargetSite : Void ExecuteCommandTextErrorHandling(System.Data.OleDb.OleDbHResult)
+----------------------------------------------------------------------------------------------------
+13:05:14 > 執行 GetDataTable 指令時發生錯誤
+         > CommandText : SELECT * FROM ( SELECT ROW_NUMBER() OVER(ORDER BY CONVERT(VARCHAR(10),B01_CardLog.CardTime,121) DESC, B01_CardLog.CardNo) AS NewIDNum,
+                B00_CardLogState.StateDesc AS 'LogStatusName', CONVERT(VARCHAR(10),B01_CardLog.CardTime,121) AS 'Date',
+                MIN(SUBSTRING(CONVERT(VARCHAR(50),B01_CardLog.CardTime,121),12,8)) AS 'First',
+                MAX(SUBSTRING(CONVERT(VARCHAR(50),B01_CardLog.CardTime,121),12,8)) AS 'Last',
+                B01_CardLog.CardNo, (SELECT OrgName FROM OrgStrucAllData('Department') WHERE OrgIDList = B01_CardLog.OrgStruc) AS 'Dept',
+                B01_CardLog.PsnNo, B01_CardLog.PsnName
+                FROM B01_CardLog
+                LEFT JOIN B00_CardLogState ON B00_CardLogState.Code = B01_CardLog.LogStatus
+                LEFT JOIN B00_ItemList ON B00_ItemList.ItemClass = 'CardType' AND B00_ItemList.ItemNo = B01_CardLog.CardType
+                INNER JOIN (SELECT PsnNo FROM B01_Person AS Person
+                INNER JOIN B01_OrgStruc AS OrgStruc ON OrgStruc.OrgStrucID = Person.OrgStrucID
+                INNER JOIN B01_MgnOrgStrucs AS MgnOrgStrucs ON MgnOrgStrucs.OrgStrucID = OrgStruc.OrgStrucID
+                INNER JOIN B00_SysUserMgns AS SysUserMgns ON SysUserMgns.MgaID = MgnOrgStrucs.MgaID
+                INNER JOIN B00_SysUser AS SysUser ON SysUser.UserID = SysUserMgns.UserID  WHERE (SysUser.UserID = ?)) AS MgnPerson ON MgnPerson.PsnNo = B01_CardLog.PsnNo  
+				WHERE  (B01_CardLog.CardType = 'E' OR B01_CardLog.CardType = 'T') AND (B01_CardLog.IsAndTrt = '1' OR B01_CardLog.EquClass = 'TRT')  
+				AND  (CONVERT(VARCHAR(10),B01_CardLog.CardTime,111) >= '2016/02/11' )  AND  (CONVERT(VARCHAR(10),B01_CardLog.CardTime,111) <= '2016/03/09' )  
+				GROUP BY CONVERT(VARCHAR(10),B01_CardLog.CardTime,121), B00_CardLogState.StateDesc, B01_CardLog.CardNo, B01_CardLog.CardVer, B01_CardLog.PsnNo, B01_CardLog.PsnName, 
+				B01_CardLog.OrgStruc ) AS Q WHERE Q.NewIDNum BETWEEN 1 AND 100
+         >  Parameters : |S:Saho
+
+     Message : 查詢逾時過期
+      Source : Microsoft OLE DB Provider for SQL Server
+  StackTrace :    於 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   於 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   於 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   於 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   於 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   於 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   於 System.Data.OleDb.OleDbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   於 Sa.DB.Base.GetDataTable(String sTableName, String sCommandText, List`1 liParameters, DataTable& oTable) 於 c:\Users\csh07\Documents\sms發行資料\smsweb201601061709\SahoWeb_STD\SaLib\DBClass\DBBase.cs: 行 884
+  TargetSite : Void ExecuteCommandTextErrorHandling(System.Data.OleDb.OleDbHResult)

@@ -1,0 +1,60 @@
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\TempSysManage (2)\TempCore\bin\Debug\TempCore.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\TempSysManage (2)\TempCore\bin\Debug\TempCore.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\TempSysManage (2)\TempCore\bin\Debug\MyDataObjectLib.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\TempSysManage (2)\TempCore\bin\Debug\MyDataObjectLib.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\TempSysManage (2)\TempCore\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\TempSysManage (2)\TempCore\obj\Debug\TempCore.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\TempSysManage (2)\TempCore\obj\Debug\TempCore.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\HallSys\TempCore\bin\Debug\TempCore.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\HallSys\TempCore\bin\Debug\TempCore.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\HallSys\TempCore\bin\Debug\MyDataObjectLib.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\HallSys\TempCore\bin\Debug\MyDataObjectLib.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\HallSys\TempCore\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\HallSys\TempCore\obj\Debug\TempCore.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\HallSys\TempCore\obj\Debug\TempCore.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\JanchenSys\TempCore\bin\Debug\TempCore.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\JanchenSys\TempCore\bin\Debug\TempCore.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\JanchenSys\TempCore\bin\Debug\MyDataObjectLib.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\JanchenSys\TempCore\bin\Debug\MyDataObjectLib.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\JanchenSys\TempCore\obj\Debug\TempCore.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\JanchenSys\TempCore\obj\Debug\TempCore.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\JanchenSys\TempCore\obj\Debug\TempCore.pdb
+C:\Users\SamZhong\Documents\Visual Studio 2012\Projects\JanchenSys\TempCore\bin\Debug\TempCore.dll
+C:\Users\SamZhong\Documents\Visual Studio 2012\Projects\JanchenSys\TempCore\bin\Debug\TempCore.pdb
+C:\Users\SamZhong\Documents\Visual Studio 2012\Projects\JanchenSys\TempCore\bin\Debug\MyDataObjectLib.dll
+C:\Users\SamZhong\Documents\Visual Studio 2012\Projects\JanchenSys\TempCore\bin\Debug\MyDataObjectLib.pdb
+C:\Users\SamZhong\Documents\Visual Studio 2012\Projects\JanchenSys\TempCore\obj\Debug\TempCore.csprojResolveAssemblyReference.cache
+C:\Users\SamZhong\Documents\Visual Studio 2012\Projects\JanchenSys\TempCore\obj\Debug\TempCore.dll
+C:\Users\SamZhong\Documents\Visual Studio 2012\Projects\JanchenSys\TempCore\obj\Debug\TempCore.pdb
+D:\janchen\JanchenSys\TempCore\bin\Debug\TempCore.dll
+D:\janchen\JanchenSys\TempCore\bin\Debug\TempCore.pdb
+D:\janchen\JanchenSys\TempCore\bin\Debug\MyDataObjectLib.dll
+D:\janchen\JanchenSys\TempCore\bin\Debug\MyDataObjectLib.pdb
+D:\janchen\JanchenSys\TempCore\obj\Debug\TempCore.csprojResolveAssemblyReference.cache
+D:\janchen\JanchenSys\TempCore\obj\Debug\TempCore.dll
+D:\janchen\JanchenSys\TempCore\obj\Debug\TempCore.pdb
+C:\janchen\JanchenSys\TempCore\bin\Debug\TempCore.dll
+C:\janchen\JanchenSys\TempCore\bin\Debug\TempCore.pdb
+C:\janchen\JanchenSys\TempCore\bin\Debug\MyDataObjectLib.dll
+C:\janchen\JanchenSys\TempCore\bin\Debug\MyDataObjectLib.pdb
+C:\janchen\JanchenSys\TempCore\obj\Debug\TempCore.csprojResolveAssemblyReference.cache
+C:\janchen\JanchenSys\TempCore\obj\Debug\TempCore.dll
+C:\janchen\JanchenSys\TempCore\obj\Debug\TempCore.pdb
+C:\Users\csh07\Documents\Visual Studio 2013\Projects\WebApplication1\TempCore\bin\Debug\TempCore.dll
+C:\Users\csh07\Documents\Visual Studio 2013\Projects\WebApplication1\TempCore\bin\Debug\TempCore.pdb
+C:\Users\csh07\Documents\Visual Studio 2013\Projects\WebApplication1\TempCore\bin\Debug\MyDataObjectLib.dll
+C:\Users\csh07\Documents\Visual Studio 2013\Projects\WebApplication1\TempCore\obj\Debug\TempCore.csprojResolveAssemblyReference.cache
+C:\Users\csh07\Documents\Visual Studio 2013\Projects\WebApplication1\TempCore\obj\Debug\TempCore.dll
+C:\Users\csh07\Documents\Visual Studio 2013\Projects\WebApplication1\TempCore\obj\Debug\TempCore.pdb
+C:\Users\csh07\documents\visual studio 2013\Projects\WebApplication1\TempCore\bin\Debug\MyDataObjectLib.pdb
+C:\Users\csh07\Documents\Visual Studio 2013\Projects\WebApplication1\TempCore\bin\Debug\TempCore.XML
+C:\Users\csh07\Documents\Visual Studio 2013\Projects\SahoSMSWeb2\TempCore\bin\Debug\TempCore.XML
+C:\Users\csh07\Documents\Visual Studio 2013\Projects\SahoSMSWeb2\TempCore\bin\Debug\TempCore.dll
+C:\Users\csh07\Documents\Visual Studio 2013\Projects\SahoSMSWeb2\TempCore\bin\Debug\TempCore.pdb
+C:\Users\csh07\Documents\Visual Studio 2013\Projects\SahoSMSWeb2\TempCore\bin\Debug\MyDataObjectLib.dll
+C:\Users\csh07\Documents\Visual Studio 2013\Projects\SahoSMSWeb2\TempCore\bin\Debug\MyDataObjectLib.pdb
+C:\Users\csh07\Documents\Visual Studio 2013\Projects\SahoSMSWeb2\TempCore\obj\Debug\TempCore.csprojResolveAssemblyReference.cache
+C:\Users\csh07\Documents\Visual Studio 2013\Projects\SahoSMSWeb2\TempCore\obj\Debug\TempCore.dll
+C:\Users\csh07\Documents\Visual Studio 2013\Projects\SahoSMSWeb2\TempCore\obj\Debug\TempCore.pdb
+C:\Users\csh07\Documents\Visual Studio 2013\Projects\SahoSMSWeb2\TempCore\bin\Debug\DataAnnotationMapper.dll
+C:\Users\csh07\Documents\Visual Studio 2013\Projects\SahoSMSWeb2\TempCore\bin\Debug\DataAnnotationMapper.pdb

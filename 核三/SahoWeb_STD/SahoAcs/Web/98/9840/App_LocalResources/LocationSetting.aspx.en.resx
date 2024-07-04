@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CallSearch_Title" xml:space="preserve">
+    <value>Equkeyword Search</value>
+  </data>
+  <data name="labCardNoLen" xml:space="preserve">
+    <value>Card No Length</value>
+    <comment>卡號長度</comment>
+  </data>
+  <data name="labEquClass" xml:space="preserve">
+    <value>EQU. Class</value>
+    <comment>設備類別</comment>
+  </data>
+  <data name="labEquEName" xml:space="preserve">
+    <value>EQU. English Name</value>
+    <comment>設備英文名稱</comment>
+  </data>
+  <data name="labEquModel" xml:space="preserve">
+    <value>EQU. Model</value>
+    <comment>設備型號</comment>
+  </data>
+  <data name="Reader_Label_Title" xml:space="preserve">
+    <value>Reader And EQU. Setting</value>
+  </data>
+  <data name="ddlEquClass_DoorAccess" xml:space="preserve">
+    <value>Door Access</value>
+  </data>
+  <data name="ddlEquClass_Elevator" xml:space="preserve">
+    <value>Elevator</value>
+  </data>
+  <data name="ddlEquClass_TRT" xml:space="preserve">
+    <value>TRT</value>
+  </data>
+  <data name="labDci" xml:space="preserve">
+    <value>Device connection</value>
+  </data>
+  <data name="labBuilding" xml:space="preserve">
+    <value>Building Name</value>
+  </data>
+  <data name="labInput_Trt" xml:space="preserve">
+    <value>Card Logs can be used as Attendance data</value>
+  </data>
+  <data name="RootNode" xml:space="preserve">
+    <value>Manage System</value>
+  </data>
+  <data name="string_Connection" xml:space="preserve">
+    <value>Connection</value>
+  </data>
+  <data name="string_Connenect_Device" xml:space="preserve">
+    <value>Connenect Device</value>
+  </data>
+  <data name="string_SetCodeMsg_0" xml:space="preserve">
+    <value>Set Code action has been processed!</value>
+  </data>
+  <data name="string_ControllerMsg_0" xml:space="preserve">
+    <value>The Controller does not have a corresponding device!</value>
+  </data>
+  <data name="string_ConnectDevice_00" xml:space="preserve">
+    <value>Connection Device No. must be entered</value>
+  </data>
+  <data name="string_ConnectDevice_01" xml:space="preserve">
+    <value>Connection Device Number, the word count exceeds the limit</value>
+  </data>
+  <data name="string_ConnectDevice_02" xml:space="preserve">
+    <value>Connection Device Description, the word count exceeds the limit</value>
+  </data>
+  <data name="string_ConnectDevice_03" xml:space="preserve">
+    <value>Mast Conn must be selected</value>
+  </data>
+  <data name="string_ConnectDevice_04" xml:space="preserve">
+    <value>Conn. Type must be selected</value>
+  </data>
+  <data name="string_Para_T_0" xml:space="preserve">
+    <value>IP must be entered</value>
+  </data>
+  <data name="string_Para_T_1" xml:space="preserve">
+    <value>Port must be entered</value>
+  </data>
+  <data name="string_Para_T_2" xml:space="preserve">
+    <value>Incorrect IP Address format</value>
+  </data>
+  <data name="string_Para_C_0" xml:space="preserve">
+    <value>ComPort must be specified</value>
+  </data>
+  <data name="string_Para_C_1" xml:space="preserve">
+    <value>BaudRate must be specified</value>
+  </data>
+  <data name="string_Para_C_2" xml:space="preserve">
+    <value>Parity must be specified</value>
+  </data>
+  <data name="string_Para_C_3" xml:space="preserve">
+    <value>DataBits must be specified</value>
+  </data>
+  <data name="string_Para_C_4" xml:space="preserve">
+    <value>StopBits must be specified</value>
+  </data>
+  <data name="string_ConnectDevice_05" xml:space="preserve">
+    <value>Device Model , the word count exceeds the limit</value>
+  </data>
+  <data name="string_ConnectDevice_06" xml:space="preserve">
+    <value>Status must be selected</value>
+  </data>
+  <data name="string_ConnectDevice_07" xml:space="preserve">
+    <value>Ctrl. Model must be selected</value>
+  </data>
+  <data name="string_ConnectDevice_08" xml:space="preserve">
+    <value>Conn. Mode must be selected</value>
+  </data>
+  <data name="string_ConnectDevice_09" xml:space="preserve">
+    <value>Auto Return must be selected</value>
+  </data>
+  <data name="string_Message_0" xml:space="preserve">
+    <value>The Connection Device Number already exists in the system</value>
+  </data>
+  <data name="string_Message_1" xml:space="preserve">
+    <value>There is no data in the system！</value>
+  </data>
+  <data name="string_Controller_00" xml:space="preserve">
+    <value>Ctrl. No must be entered</value>
+  </data>
+  <data name="string_Controller_01" xml:space="preserve">
+    <value>Ctrl. No, the word count exceeds the limit</value>
+  </data>
+  <data name="string_Controller_02" xml:space="preserve">
+    <value>Ctrl. Name, the word count exceeds the limit</value>
+  </data>
+  <data name="string_Controller_03" xml:space="preserve">
+    <value>Ctrl. Description, the word count exceeds the limit</value>
+  </data>
+  <data name="string_Controller_04" xml:space="preserve">
+    <value>Device Conn. must be selected</value>
+  </data>
+  <data name="string_Controller_05" xml:space="preserve">
+    <value>Ctrl. Model must be selected</value>
+  </data>
+  <data name="string_Controller_06" xml:space="preserve">
+    <value>Ctrl. Status must be selected</value>
+  </data>
+  <data name="string_Controller_07" xml:space="preserve">
+    <value>Mac. No Return must be selected</value>
+  </data>
+  <data name="string_Controller_08" xml:space="preserve">
+    <value>Mac. No must be integer</value>
+  </data>
+  <data name="string_Controller_09" xml:space="preserve">
+    <value>Mac. No, the word count exceeds the limit</value>
+  </data>
+  <data name="string_Controller_10" xml:space="preserve">
+    <value>Mac. No must be between 0-255</value>
+  </data>
+  <data name="string_Reader_11" xml:space="preserve">
+    <value>Building, the word count exceeds the limit</value>
+  </data>
+  <data name="string_Reader_13" xml:space="preserve">
+    <value>EQU. Name, the word count exceeds the limit</value>
+  </data>
+  <data name="string_Reader_00" xml:space="preserve">
+    <value>Reader No. must be entered</value>
+  </data>
+  <data name="string_Reader_06" xml:space="preserve">
+    <value>EQU. NO must be selected</value>
+  </data>
+  <data name="string_Reader_07" xml:space="preserve">
+    <value>In/Out must be selected</value>
+  </data>
+  <data name="string_Reader_08" xml:space="preserve">
+    <value>EQU. Class, the word count exceeds the limit</value>
+  </data>
+  <data name="string_Reader_09" xml:space="preserve">
+    <value>EQU. Model, the word count exceeds the limit</value>
+  </data>
+  <data name="string_Reader_10" xml:space="preserve">
+    <value>EQU. No, the word count exceeds the limit</value>
+  </data>
+  <data name="string_Reader_12" xml:space="preserve">
+    <value>Floor, the word count exceeds the limit</value>
+  </data>
+  <data name="string_Reader_14" xml:space="preserve">
+    <value>EQU. English Name, the word count exceeds the limit</value>
+  </data>
+  <data name="string_Reader_15" xml:space="preserve">
+    <value>Device connection, the word count exceeds the limit</value>
+  </data>
+  <data name="string_Reader_05" xml:space="preserve">
+    <value>Reader Description, the word count exceeds the limit</value>
+  </data>
+  <data name="string_Reader_04" xml:space="preserve">
+    <value>Reader Name, the word count exceeds the limit</value>
+  </data>
+  <data name="string_Reader_02" xml:space="preserve">
+    <value>Reader No., the word count exceeds the limit</value>
+  </data>
+  <data name="string_Reader_01" xml:space="preserve">
+    <value>Reader No. must be integer</value>
+  </data>
+  <data name="string_Reader_03" xml:space="preserve">
+    <value>Reader No. must be between 1-128</value>
+  </data>
+  <data name="string_Reader_16" xml:space="preserve">
+    <value>Card No. Length is not integer</value>
+  </data>
+  <data name="string_Reader_17" xml:space="preserve">
+    <value>Card No. Length must be between 0-255</value>
+  </data>
+  <data name="labIsShowName" xml:space="preserve">
+    <value>Display Name</value>
+  </data>
+  <data name="string_ConnectDevice_10" xml:space="preserve">
+    <value>Firmware , the word count exceeds the limit</value>
+  </data>
+  <data name="DciSet" xml:space="preserve">
+    <value>Connection Setting</value>
+  </data>
+  <data name="ttLockedIP" xml:space="preserve">
+    <value>Assign IP</value>
+  </data>
+  <data name="ddlDisabled" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="ddlEnabled" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="lblAddConn" xml:space="preserve">
+    <value>Add Device Connection</value>
+  </data>
+  <data name="lblDelConn" xml:space="preserve">
+    <value>Delete Device Connection</value>
+  </data>
+  <data name="lblEditConn" xml:space="preserve">
+    <value>Edit Device Connection</value>
+  </data>
+  <data name="ttConnName" xml:space="preserve">
+    <value>Conn Name</value>
+  </data>
+  <data name="ttConnNo" xml:space="preserve">
+    <value>Conn No</value>
+  </data>
+  <data name="ttConnPW" xml:space="preserve">
+    <value>Conn Password</value>
+  </data>
+  <data name="ttFormat" xml:space="preserve">
+    <value>Format ex: XXX.XXX.XXX.XXX</value>
+  </data>
+  <data name="ttIllegal" xml:space="preserve">
+    <value>Illegal</value>
+  </data>
+  <data name="ttIP" xml:space="preserve">
+    <value>IP Address</value>
+  </data>
+  <data name="ttMustInput" xml:space="preserve">
+    <value>Must Input</value>
+  </data>
+  <data name="ttOverChar" xml:space="preserve">
+    <value>Over Char Size</value>
+  </data>
+  <data name="ttPort" xml:space="preserve">
+    <value>Tcp Port</value>
+  </data>
+  <data name="ttRange" xml:space="preserve">
+    <value>Range in 1001~65535</value>
+  </data>
+  <data name="string_Dci_01" xml:space="preserve">
+    <value>Conn No, the word count exceeds the limit</value>
+  </data>
+  <data name="string_Dci_02" xml:space="preserve">
+    <value>Conn Name must be entered</value>
+  </data>
+  <data name="string_Dci_00" xml:space="preserve">
+    <value>Conn No must be entered</value>
+  </data>
+  <data name="string_Dci_03" xml:space="preserve">
+    <value>Conn Name, the word count exceeds the limit</value>
+  </data>
+  <data name="string_Dci_04" xml:space="preserve">
+    <value>IP Address must be entered</value>
+  </data>
+  <data name="string_Dci_09" xml:space="preserve">
+    <value>Tcp Port, the vaule must be between 1-65535</value>
+  </data>
+  <data name="string_Dci_05" xml:space="preserve">
+    <value>IP Address, the word count exceeds the limit</value>
+  </data>
+  <data name="string_Dci_06" xml:space="preserve">
+    <value>IP Address Format is Wrong</value>
+  </data>
+  <data name="string_Dci_07" xml:space="preserve">
+    <value>Tcp Port must be entered</value>
+  </data>
+  <data name="string_Dci_08" xml:space="preserve">
+    <value>Tcp Port, the word count exceeds the limit</value>
+  </data>
+  <data name="string_Dci_10" xml:space="preserve">
+    <value>Conn Password must be entered</value>
+  </data>
+  <data name="string_Dci_11" xml:space="preserve">
+    <value>Conn Password, the word count exceeds the limit</value>
+  </data>
+  <data name="string_Dci_12" xml:space="preserve">
+    <value>The Conn No already exists in the system</value>
+  </data>
+  <data name="string_Dci_13" xml:space="preserve">
+    <value>Database processing failed, try again please.</value>
+  </data>
+  <data name="string_Dci_Insert_Failed" xml:space="preserve">
+    <value>DeviceConnInfo Insert failded</value>
+  </data>
+  <data name="string_Dci_Update_Failed" xml:space="preserve">
+    <value>DeviceConnInfo Update failded</value>
+  </data>
+  <data name="string_Dci_Delete_Failed" xml:space="preserve">
+    <value>DeviceConnInfo Delete failded</value>
+  </data>
+  <data name="string_Data_Used" xml:space="preserve">
+    <value>This Data has been used and can not be deleted</value>
+  </data>
+  <data name="CtrlParaSetting" xml:space="preserve">
+    <value>Ctrl Para Setting</value>
+  </data>
+  <data name="ReaderParaSetting" xml:space="preserve">
+    <value>Reader Para Setting</value>
+  </data>
+  <data name="btnPrint" xml:space="preserve">
+    <value>Print QR Code</value>
+  </data>
+  <data name="btnPrint1" xml:space="preserve">
+    <value>Print Reader QR Code</value>
+  </data>
+</root>
